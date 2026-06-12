@@ -1,114 +1,75 @@
-/* BlindClock site — multi-language switcher (v1.9+).
-   English lives in the HTML (SEO + no-JS fallback). All other languages live in
-   assets/i18n.js as window.BC_STRINGS[lang][key]; this engine swaps innerHTML by
-   the element's data-i18n key. Build-free — just edit i18n.js to add/adjust copy.
-
-   To add a language: add it to LANGS below and add its block to BC_STRINGS in i18n.js. */
+/* BlindClock site — path-based language switcher (v1.10+).
+   Each language is a pre-rendered static folder. English is at the site root;
+   every other language lives under /<slug>/ :
+       (en) /   zh /zh   ja /jp   ko /ko   de /de   fr /fr   it /it
+       pl /pl   pt-BR /pt   es-MX /es   tr /tr   vi /vi
+   This script ONLY builds the <select> and navigates — content is already baked
+   into each page (see _build_pages.py). No runtime text swapping.
+   Keep LANGS in sync with _build_pages.py. */
 (function () {
-  var STORAGE_KEY = "bc-lang";
-  var DEFAULT = "en";
-
-  /* code -> label shown in the dropdown. Order = dropdown order. */
+  /* [code, slug, label]  — slug "" = English at root. */
   var LANGS = [
-    ["en", "English"],
-    ["zh-Hant", "繁體中文"],
-    ["ja", "日本語"],
-    ["ko", "한국어"],
-    ["de", "Deutsch"],
-    ["fr-FR", "Français"],
-    ["it", "Italiano"],
-    ["pl", "Polski"],
-    ["pt-BR", "Português (BR)"],
-    ["es-MX", "Español (LA)"],
-    ["tr", "Türkçe"],
-    ["vi", "Tiếng Việt"]
+    ["en", "", "English"],
+    ["zh-Hant", "zh", "繁體中文"],
+    ["ja", "jp", "日本語"],
+    ["ko", "ko", "한국어"],
+    ["de", "de", "Deutsch"],
+    ["fr-FR", "fr", "Français"],
+    ["it", "it", "Italiano"],
+    ["pl", "pl", "Polski"],
+    ["pt-BR", "pt", "Português (BR)"],
+    ["es-MX", "es", "Español (LA)"],
+    ["tr", "tr", "Türkçe"],
+    ["vi", "vi", "Tiếng Việt"]
   ];
 
-  var strings = window.BC_STRINGS || {};
+  var SLUG_TO_CODE = {};
+  for (var i = 0; i < LANGS.length; i++) if (LANGS[i][1]) SLUG_TO_CODE[LANGS[i][1]] = LANGS[i][0];
 
-  function isSupported(code) {
-    for (var i = 0; i < LANGS.length; i++) if (LANGS[i][0] === code) return true;
-    return false;
-  }
-
-  function normalize(value) {
-    if (!value) return null;
-    value = String(value);
-    if (isSupported(value)) return value;
-    var low = value.toLowerCase();
-    if (low.indexOf("zh") === 0) return "zh-Hant";
-    if (low.indexOf("pt") === 0) return "pt-BR";
-    if (low.indexOf("es") === 0) return "es-MX";
-    if (low.indexOf("fr") === 0) return "fr-FR";
-    if (low.indexOf("ja") === 0) return "ja";
-    if (low.indexOf("ko") === 0) return "ko";
-    if (low.indexOf("de") === 0) return "de";
-    if (low.indexOf("it") === 0) return "it";
-    if (low.indexOf("pl") === 0) return "pl";
-    if (low.indexOf("tr") === 0) return "tr";
-    if (low.indexOf("vi") === 0) return "vi";
-    if (low.indexOf("en") === 0) return "en";
-    return null;
-  }
-
-  function detect() {
-    var fromQuery = normalize(new URLSearchParams(window.location.search).get("lang"));
-    if (fromQuery) return fromQuery;
-    var saved = null;
-    try { saved = normalize(localStorage.getItem(STORAGE_KEY)); } catch (e) {}
-    if (saved) return saved;
-    var langs = navigator.languages || [navigator.language];
-    for (var i = 0; i < langs.length; i++) {
-      var lang = normalize(langs[i]);
-      if (lang) return lang;
+  /* Split the current path into { base, slug, file }. Works both at the custom-
+     domain root (/jp/privacy.html) and under a project subpath on github.io
+     (/blindclock/jp/privacy.html). */
+  function parse() {
+    var path = location.pathname;
+    var lastSlash = path.lastIndexOf("/");
+    var tail = path.slice(lastSlash + 1);
+    var file = /\.html?$/i.test(tail) ? tail : "";
+    var dir = file ? path.slice(0, lastSlash + 1) : path;          // always ends with "/"
+    var segs = dir.replace(/\/+$/, "").split("/");                  // ["", "blindclock", "jp"]
+    var last = segs[segs.length - 1];
+    var slug = "", base = dir;
+    if (SLUG_TO_CODE[last]) {
+      slug = last;
+      base = segs.slice(0, -1).join("/") + "/";
     }
-    return DEFAULT;
+    if (base === "") base = "/";
+    return { base: base, slug: slug, file: file };
   }
 
-  /* cache the English (in-HTML) innerHTML once, so we can restore it and so it is
-     the fallback for any key a translation happens to miss. */
-  var cached = false;
-  var nodes = [];
-  function cacheDefaults() {
-    if (cached) return;
-    var found = document.querySelectorAll("[data-i18n]");
-    for (var i = 0; i < found.length; i++) {
-      nodes.push([found[i], found[i].getAttribute("data-i18n"), found[i].innerHTML]);
-    }
-    cached = true;
+  function currentCode() {
+    var p = parse();
+    return p.slug ? SLUG_TO_CODE[p.slug] : "en";
   }
 
-  function apply(lang) {
-    cacheDefaults();
-    document.documentElement.setAttribute("data-lang", lang);
-    document.documentElement.setAttribute("lang", lang);
-    var dict = strings[lang] || {};
-    for (var i = 0; i < nodes.length; i++) {
-      var el = nodes[i][0], key = nodes[i][1], en = nodes[i][2];
-      var translated = (lang === DEFAULT) ? en : (dict[key] != null ? dict[key] : en);
-      el.innerHTML = translated;
-    }
-    var sel = document.getElementById("lang-select");
-    if (sel) sel.value = lang;
+  function targetUrl(toSlug) {
+    var p = parse();
+    var file = (p.file === "" || p.file === "index.html") ? "" : p.file;  // clean dir URLs
+    return p.base + (toSlug ? toSlug + "/" : "") + file;
   }
-
-  window.bcSetLang = function (lang) {
-    lang = normalize(lang) || DEFAULT;
-    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
-    apply(lang);
-  };
 
   document.addEventListener("DOMContentLoaded", function () {
     var sel = document.getElementById("lang-select");
-    if (sel) {
-      for (var i = 0; i < LANGS.length; i++) {
-        var o = document.createElement("option");
-        o.value = LANGS[i][0];
-        o.textContent = LANGS[i][1];
-        sel.appendChild(o);
-      }
-      sel.addEventListener("change", function () { window.bcSetLang(this.value); });
+    if (!sel) return;
+    var cur = currentCode();
+    for (var i = 0; i < LANGS.length; i++) {
+      var o = document.createElement("option");
+      o.value = LANGS[i][1];                  // slug ("" for English)
+      o.textContent = LANGS[i][2];
+      if (LANGS[i][0] === cur) o.selected = true;
+      sel.appendChild(o);
     }
-    apply(detect());
+    sel.addEventListener("change", function () {
+      location.href = targetUrl(this.value);
+    });
   });
 })();

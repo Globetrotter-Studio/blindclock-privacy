@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl" data-lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlindClock — Zegar blindów do turniejów pokera na iPhone’a i iPada</title>
+  <meta name="description" content="BlindClock to zegar blindów do turniejów pokera na iPhone’a i iPada. Generator struktury blindów, time bank, kalkulator wypłat, Live Activity, widok stołu na iPadzie i synchronizacja z iCloud. Bez konta, bez reklam, bez subskrypcji.">
+  <link rel="icon" type="image/png" href="../assets/icon.png">
+  <link rel="apple-touch-icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../assets/style.css?v=1.9">
+  <script src="../assets/lang.js?v=1.10"></script>
+<!--BC_I18N_HEAD_START-->
+  <link rel="canonical" href="https://blindclock.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://blindclock.app/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://blindclock.app/zh/">
+  <link rel="alternate" hreflang="ja" href="https://blindclock.app/jp/">
+  <link rel="alternate" hreflang="ko" href="https://blindclock.app/ko/">
+  <link rel="alternate" hreflang="de" href="https://blindclock.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://blindclock.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://blindclock.app/it/">
+  <link rel="alternate" hreflang="pl" href="https://blindclock.app/pl/">
+  <link rel="alternate" hreflang="pt-BR" href="https://blindclock.app/pt/">
+  <link rel="alternate" hreflang="es-MX" href="https://blindclock.app/es/">
+  <link rel="alternate" hreflang="tr" href="https://blindclock.app/tr/">
+  <link rel="alternate" hreflang="vi" href="https://blindclock.app/vi/">
+  <link rel="alternate" hreflang="x-default" href="https://blindclock.app/">
+  <!--BC_I18N_HEAD_END-->
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="../assets/icon.png" alt="BlindClock icon">
+      BlindClock
+    </a>
+    <div class="nav-links">
+      <a class="nav-extra" href="#features"><span data-i18n="i1">Funkcje</span></a>
+      <a class="nav-extra" href="#whats-new"><span data-i18n="i2">Nowości</span></a>
+      <a href="support.html"><span data-i18n="i3">Pomoc</span></a>
+      <a href="privacy.html"><span data-i18n="i4">Prywatność</span></a>
+      <select id="lang-select" class="lang-select" aria-label="Language"></select>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="app-icon" src="../assets/icon-large.png" alt="BlindClock app icon">
+  <h1>BlindClock</h1>
+  <p class="tagline">
+    <span data-i18n="i5">Zegar turniejowy, który poprowadzi Twój pokerowy wieczór.</span>
+  </p>
+  <p class="sub">
+    <span data-i18n="i6">Poziomy blindów, przerwy, time bank, wypłaty — skonfiguruj w kilka sekund, oprzyj iPada i po prostu graj. Bez konta, bez reklam, bez subskrypcji.</span>
+  </p>
+  <div class="badge-row">
+    <!-- TODO: replace href with the real App Store URL once the app page is live -->
+    <a class="store-badge" href="https://apps.apple.com/app/blindclock">
+      <span class="apple"></span>
+      <span>
+        <span data-i18n="i7">Pobierz z App Store</span>
+      </span>
+    </a>
+    <span class="version-pill">
+      <span data-i18n="i8">Wersja 1.9 · iOS 18.6+ · iPhone &amp; iPad</span>
+    </span>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="features">
+    <h2 class="section-title">
+      <span data-i18n="i9">Wszystko, czego potrzebuje organizator</span>
+    </h2>
+    <p class="section-sub">
+      <span data-i18n="i10">Stworzony z myślą o grach domowych i turniejach klubowych — dokładny przy wyłączonym ekranie, czytelny z drugiego końca stołu.</span>
+    </p>
+    <div class="grid">
+      <div class="card">
+        <span class="suit">♠</span>
+        <h3><span data-i18n="i11">Precyzyjny zegar turniejowy</span></h3>
+        <p>
+          <span data-i18n="i12">Wstrzymuj, wznawiaj lub pomijaj poziomy. Zegar pozostaje dokładny w tle i przetrwa wymuszone zamknięcie — wracasz dokładnie tam, gdzie skończyłeś.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♥</span>
+        <h3><span data-i18n="i13">Generator struktury blindów</span></h3>
+        <p>
+          <span data-i18n="i14">Podaj liczbę graczy, żetony i docelowy czas trwania — jednym dotknięciem otrzymasz przejrzystą strukturę w stylu kasyna, z przerwami.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♦</span>
+        <h3><span data-i18n="i15">Kalkulator wypłat</span></h3>
+        <p>
+          <span data-i18n="i16">Buy-iny, rebuye i podział puli liczone na bieżąco — rozlicz się na koniec wieczoru bez arkusza kalkulacyjnego.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♣</span>
+        <h3><span data-i18n="i17">Time bank</span></h3>
+        <p>
+          <span data-i18n="i18">Daj graczom dodatkowy czas na decyzję dzięki konfigurowalnym time bankom, wraz z ostrzeżeniami i dźwiękami.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♠</span>
+        <h3><span data-i18n="i19">Live Activity &amp; Dynamic Island</span></h3>
+        <p>
+          <span data-i18n="i20">Bieżący poziom widnieje na ekranie blokady i w Dynamic Island. Na ładującym się iPhonie tryb StandBy zamienia go w pełnoekranowy zegar turniejowy.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♥</span>
+        <h3><span data-i18n="i21">Wyświetlacz stołowy na iPadzie</span></h3>
+        <p>
+          <span data-i18n="i22">Obróć iPada w poziom, aby uzyskać ogromne odliczanie z blindami po obu stronach — cały stół odczyta je jednym spojrzeniem, a ekran pozostaje włączony.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♦</span>
+        <h3><span data-i18n="i23">Udostępnianie szablonów</span></h3>
+        <p>
+          <span data-i18n="i24">Wyeksportuj dowolny turniej jako plik .blindclock i wyślij go znajomemu przez AirDrop — zaimportuje Twoją dokładną strukturę jednym dotknięciem.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♣</span>
+        <h3><span data-i18n="i25">Synchronizacja iCloud</span></h3>
+        <p>
+          <span data-i18n="i26">Twoje szablony turniejów podążają za Tobą między iPhonem a iPadem automatycznie — za darmo dla każdego.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="whats-new">
+    <div class="whatsnew">
+      <h2>
+        <span data-i18n="i27">Nowości w wersji 1.9</span>
+      </h2>
+      <ul>
+        <li>
+          <b><span data-i18n="i28a">Teraz w 12 językach</span></b> —
+          <span data-i18n="i28b">aplikacja, ta strona i strona w App Store są w pełni zlokalizowane:</span>
+          English · 繁體中文 · 日本語 · 한국어 · Deutsch · Français · Italiano · Polski · Português · Español · Türkçe · Tiếng Việt.
+        </li>
+        <li>
+          <b><span data-i18n="i29a">Prowadź turnieje w swoim języku</span></b> —
+          <span data-i18n="i29b">każdy ekran, od generatora struktury blindów po wypłaty, mówi teraz Twoim językiem od początku do końca.</span>
+        </li>
+        <li>
+          <b><span data-i18n="i30a">Szlify i poprawki</span></b> —
+          <span data-i18n="i30b">udoskonalenia w całej aplikacji.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="pro">
+    <div class="pro">
+      <div class="crown">👑</div>
+      <h2>BlindClock Pro</h2>
+      <p class="lead">
+        <span data-i18n="i41">Darmowa wersja jest w pełni grywalna — zegar, Live Activity, generator, wypłaty, synchronizacja oraz do 5 niestandardowych turniejów. Pro znosi limit jednym zakupem, na zawsze, na wszystkich Twoich urządzeniach.</span>
+      </p>
+      <ul class="pro-points">
+        <li><span data-i18n="i42">Nieograniczona liczba niestandardowych turniejów</span></li>
+        <li><span data-i18n="i43">Jednorazowy zakup</span></li>
+        <li><span data-i18n="i44">Bez reklam, bez subskrypcji</span></li>
+        <li><span data-i18n="i45">Wszystkie Twoje urządzenia</span></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-links">
+    <a href="support.html"><span data-i18n="i46">Pomoc</span></a>
+    <a href="privacy.html"><span data-i18n="i47">Polityka prywatności</span></a>
+    <a href="mailto:panshikai0117@gmail.com"><span data-i18n="i48">Kontakt</span></a>
+  </div>
+  <div>© 2026 globetrotter-studio ·
+    <span data-i18n="i49">BlindClock to niezależna aplikacja.</span>
+  </div>
+</footer>
+
+</body>
+</html>

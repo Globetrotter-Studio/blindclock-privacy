@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlindClock — iPhone 與 iPad 的撲克錦標賽盲注計時器</title>
+  <meta name="description" content="BlindClock 是 iPhone 與 iPad 上的撲克錦標賽盲注時鐘。盲注結構產生器、時間銀行、彩金計算機、即時動態、iPad 牌桌顯示與 iCloud 同步。免註冊、無廣告、無訂閱。">
+  <link rel="icon" type="image/png" href="../assets/icon.png">
+  <link rel="apple-touch-icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../assets/style.css?v=1.9">
+  <script src="../assets/lang.js?v=1.10"></script>
+<!--BC_I18N_HEAD_START-->
+  <link rel="canonical" href="https://blindclock.app/zh/">
+  <link rel="alternate" hreflang="en" href="https://blindclock.app/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://blindclock.app/zh/">
+  <link rel="alternate" hreflang="ja" href="https://blindclock.app/jp/">
+  <link rel="alternate" hreflang="ko" href="https://blindclock.app/ko/">
+  <link rel="alternate" hreflang="de" href="https://blindclock.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://blindclock.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://blindclock.app/it/">
+  <link rel="alternate" hreflang="pl" href="https://blindclock.app/pl/">
+  <link rel="alternate" hreflang="pt-BR" href="https://blindclock.app/pt/">
+  <link rel="alternate" hreflang="es-MX" href="https://blindclock.app/es/">
+  <link rel="alternate" hreflang="tr" href="https://blindclock.app/tr/">
+  <link rel="alternate" hreflang="vi" href="https://blindclock.app/vi/">
+  <link rel="alternate" hreflang="x-default" href="https://blindclock.app/">
+  <!--BC_I18N_HEAD_END-->
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="../assets/icon.png" alt="BlindClock icon">
+      BlindClock
+    </a>
+    <div class="nav-links">
+      <a class="nav-extra" href="#features"><span data-i18n="i1">功能</span></a>
+      <a class="nav-extra" href="#whats-new"><span data-i18n="i2">最新版本</span></a>
+      <a href="support.html"><span data-i18n="i3">支援</span></a>
+      <a href="privacy.html"><span data-i18n="i4">隱私權</span></a>
+      <select id="lang-select" class="lang-select" aria-label="Language"></select>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="app-icon" src="../assets/icon-large.png" alt="BlindClock app icon">
+  <h1>BlindClock</h1>
+  <p class="tagline">
+    <span data-i18n="i5">替你管好整晚牌局的錦標賽時鐘。</span>
+  </p>
+  <p class="sub">
+    <span data-i18n="i6">盲注級別、休息時段、Time Bank、獎池分配——幾秒鐘設定完成，把 iPad 立在桌上就能開打。不用帳號、沒有廣告、不搞訂閱。</span>
+  </p>
+  <div class="badge-row">
+    <!-- TODO: replace href with the real App Store URL once the app page is live -->
+    <a class="store-badge" href="https://apps.apple.com/app/blindclock">
+      <span class="apple"></span>
+      <span>
+        <span data-i18n="i7">前往 App Store 下載</span>
+      </span>
+    </a>
+    <span class="version-pill">
+      <span data-i18n="i8">版本 1.9 · iOS 18.6+ · iPhone 與 iPad</span>
+    </span>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="features">
+    <h2 class="section-title">
+      <span data-i18n="i9">主持人需要的，都在這裡</span>
+    </h2>
+    <p class="section-sub">
+      <span data-i18n="i10">為家庭局與俱樂部錦標賽而生——螢幕關了照樣精準，整張牌桌都看得清楚。</span>
+    </p>
+    <div class="grid">
+      <div class="card">
+        <span class="suit">♠</span>
+        <h3><span data-i18n="i11">精準錦標賽計時</span></h3>
+        <p>
+          <span data-i18n="i12">暫停、續跑、跳級隨你操作。退到背景照樣準確，就算強制關閉 App 也能從中斷處接著跑。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♥</span>
+        <h3><span data-i18n="i13">盲注結構產生器</span></h3>
+        <p>
+          <span data-i18n="i14">輸入人數、籌碼與目標時長，一鍵產生含休息時段、數字漂亮的標準結構。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♦</span>
+        <h3><span data-i18n="i15">獎池計算器</span></h3>
+        <p>
+          <span data-i18n="i16">買入、重買、名次拆分當場算好，散場結帳不用再開試算表。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♣</span>
+        <h3><span data-i18n="i17">Time Bank</span></h3>
+        <p>
+          <span data-i18n="i18">可設定的 Time Bank 給玩家加時思考，倒數提示與音效一應俱全。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♠</span>
+        <h3><span data-i18n="i19">Live Activity 與動態島</span></h3>
+        <p>
+          <span data-i18n="i20">目前級別常駐鎖定畫面與動態島；iPhone 橫放充電時，StandBy 直接變成全螢幕比賽時鐘。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♥</span>
+        <h3><span data-i18n="i21">iPad 牌桌展示模式</span></h3>
+        <p>
+          <span data-i18n="i22">iPad 轉成橫向就是巨大倒數搭配左右盲注資訊，全桌一眼看清，螢幕全程常亮。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♦</span>
+        <h3><span data-i18n="i23">範本分享</span></h3>
+        <p>
+          <span data-i18n="i24">把賽事匯出成 .blindclock 檔，AirDrop 給牌友，一鍵就能匯入一模一樣的結構。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♣</span>
+        <h3><span data-i18n="i25">iCloud 同步</span></h3>
+        <p>
+          <span data-i18n="i26">賽事範本在 iPhone 與 iPad 之間自動同步——所有人免費使用。</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="whats-new">
+    <div class="whatsnew">
+      <h2>
+        <span data-i18n="i27">1.9 版更新內容</span>
+      </h2>
+      <ul>
+        <li>
+          <b><span data-i18n="i28a">支援 12 種語言</span></b> —
+          <span data-i18n="i28b">App、本網站與 App Store 產品頁皆已完整在地化：</span>
+          English · 繁體中文 · 日本語 · 한국어 · Deutsch · Français · Italiano · Polski · Português · Español · Türkçe · Tiếng Việt.
+        </li>
+        <li>
+          <b><span data-i18n="i29a">用你的語言主持牌局</span></b> —
+          <span data-i18n="i29b">從盲注結構產生器到獎池計算，每個畫面都用你的語言，從頭到尾。</span>
+        </li>
+        <li>
+          <b><span data-i18n="i30a">細節打磨與修正</span></b> —
+          <span data-i18n="i30b">全 App 體驗優化。</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="pro">
+    <div class="pro">
+      <div class="crown">👑</div>
+      <h2>BlindClock Pro</h2>
+      <p class="lead">
+        <span data-i18n="i41">免費版功能完整可用——計時器、Live Activity、結構產生器、獎池計算、同步，以及最多 5 個自訂賽事。Pro 一次買斷即永久解除上限，所有裝置通用。</span>
+      </p>
+      <ul class="pro-points">
+        <li><span data-i18n="i42">無限自訂賽事</span></li>
+        <li><span data-i18n="i43">一次買斷</span></li>
+        <li><span data-i18n="i44">無廣告、無訂閱</span></li>
+        <li><span data-i18n="i45">所有裝置通用</span></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-links">
+    <a href="support.html"><span data-i18n="i46">支援</span></a>
+    <a href="privacy.html"><span data-i18n="i47">隱私權政策</span></a>
+    <a href="mailto:panshikai0117@gmail.com"><span data-i18n="i48">聯絡我們</span></a>
+  </div>
+  <div>© 2026 globetrotter-studio ·
+    <span data-i18n="i49">BlindClock 是一款獨立開發的 App。</span>
+  </div>
+</footer>
+
+</body>
+</html>

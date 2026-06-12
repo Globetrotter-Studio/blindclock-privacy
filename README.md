@@ -1,32 +1,39 @@
 # BlindClock Website
 
-GitHub Pages site for the BlindClock iOS app (repo: `Globetrotter-Studio/blindclock-privacy`).
-Three static pages, bilingual (EN / 繁體中文) via a client-side toggle — no build step.
+GitHub Pages site for the BlindClock iOS app, served on the custom domain **`blindclock.app`**
+(see `CNAME`). Three pages × 12 languages, **pre-rendered** into per-language folders by
+`_build_pages.py` — each language is a real, indexable URL (good for SEO). There IS a build step now.
 
-## Pages & App Store Connect URLs
+## Pages & App Store Connect URLs (English / canonical)
 
 | Page | File | Live URL | Used as |
 |---|---|---|---|
-| Marketing landing | `index.html` | `https://globetrotter-studio.github.io/blindclock-privacy/` | 行銷 URL (Marketing URL) |
-| Support | `support.html` | `https://globetrotter-studio.github.io/blindclock-privacy/support.html` | 支援 URL (Support URL) |
-| Privacy Policy | `privacy.html` | `https://globetrotter-studio.github.io/blindclock-privacy/privacy.html` | 隱私權政策 URL (Privacy Policy URL) |
+| Marketing landing | `index.html` | `https://blindclock.app/` | 行銷 URL (Marketing URL) |
+| Support | `support.html` | `https://blindclock.app/support.html` | 支援 URL (Support URL) |
+| Privacy Policy | `privacy.html` | `https://blindclock.app/privacy.html` | 隱私權政策 URL (Privacy Policy URL) |
 
-> ⚠️ `index.html` used to BE the privacy policy. After deploying this version,
-> update the Privacy Policy URL in App Store Connect to point at `privacy.html`.
-> Do **not** rename the GitHub repo — it would break every URL above.
+Localized variants live under a slug folder, e.g. `https://blindclock.app/jp/privacy.html` (日本語),
+`https://blindclock.app/zh/` (繁中). `blindclock.app/jp` (no slash) 301-redirects to `/jp/`.
 
-## Language switching (12 languages, since v1.9)
+> ⚠️ DNS: `blindclock.app` is registered on Cloudflare. Apex → 4 GitHub A records
+> (185.199.108–111.153), `www` → CNAME `globetrotter-studio.github.io`, proxy = **DNS only**.
+> Set the custom domain in the repo's Settings → Pages so the `CNAME` file lands correctly.
+> The `CNAME` file in this repo pins `blindclock.app`.
 
-The site is localized in **English, 繁體中文, 日本語, 한국어, Deutsch, Français, Italiano, Polski, Português (BR), Español (LA), Türkçe, Tiếng Việt**.
+## Language switching — path-based, pre-rendered (12 languages)
 
-- **English lives in the HTML** (so the page works with JS off and is indexable). Every other language lives in `assets/i18n.js` as `window.BC_STRINGS[lang][key]`.
-- Each translatable element carries a `data-i18n="<key>"` attribute. `assets/lang.js` swaps that element's `innerHTML` to the chosen language (or restores the English default).
-- `assets/lang.js` sets `data-lang` on `<html>` and builds the `<select id="lang-select">` dropdown from its `LANGS` list.
-- Priority: `?lang=<code>` query param → saved choice (localStorage) → browser language → English.
-- **To change/add copy:** edit `_web_source.json` (`key → { en, zh-Hant }`) then rebuild i18n.js, OR edit the value directly in `assets/i18n.js`. To add a *new language*: add it to `LANGS` in `lang.js` and add its block to `BC_STRINGS`.
+Localized in **English, 繁體中文, 日本語, 한국어, Deutsch, Français, Italiano, Polski, Português (BR), Español (LA), Türkçe, Tiếng Việt**. URL slugs: `(en)=root`, `zh`, `jp`, `ko`, `de`, `fr`, `it`, `pl`, `pt`, `es`, `tr`, `vi`.
 
-> The repo keeps the build helpers used in v1.9: `_web_source.json` (key → en + zh-Hant source),
-> `_build_i18n.py` (regenerates `assets/i18n.js`), and the one-off `_convert*.py` scripts.
+How it works (each language is its own static page — NOT a client-side swap):
+
+- **English is the source of truth in the HTML** (`index/privacy/support.html` at root). Each translatable element carries `data-i18n="<key>"`; body translations live in `assets/i18n.js` as `window.BC_STRINGS[lang][key]`.
+- Per-page `<title>` / `<meta description>` for every language live in **`_meta_i18n.json`**.
+- **`_build_pages.py`** bakes each translation into static files: it writes the English pages at root and every other language into `<slug>/…`, sets `<html lang>`, swaps `<title>`/description, rewrites `assets/…` → `../assets/…`, and injects `<link rel="canonical">` + 12 `hreflang` alternates. It also regenerates `sitemap.xml` + `robots.txt`. **Run it after any copy change** — the language subfolders are generated, never hand-edited.
+- `assets/lang.js` is now navigation-only: it builds the `<select id="lang-select">` and, on change, sends the browser to the same page under the chosen slug (no runtime text swapping). Keep its `LANGS` list in sync with `_build_pages.py`.
+- To change the domain: edit `SITE` in `_build_pages.py` (and `CNAME`), then rebuild.
+
+> Legacy helpers kept from v1.9: `_web_source.json` (key → en + zh-Hant source) and
+> `_build_i18n.py` (regenerates `assets/i18n.js` from the translation workflow output).
 
 ## 🔁 Release checklist — update this site with EVERY app release
 
@@ -44,11 +51,13 @@ When a new version (e.g. 1.11) ships, update:
    If changed, also bump the “Effective date” (`pv2`) in every language.
 4. **Translations:** after editing any English string, update its translation for all 11 other languages (edit `_web_source.json` + `python3 _build_i18n.py`, or edit `assets/i18n.js` directly).
 5. Fill in the real App Store URL in `index.html` (`store-badge` link) once the app page is live.
-6. Commit and push to `main` — GitHub Pages deploys automatically.
+6. **Rebuild:** `python3 _build_pages.py` — regenerates all 36 pages + `sitemap.xml`. (If titles/descriptions changed, edit `_meta_i18n.json` first.)
+7. Commit and push to `main` (include the regenerated `<slug>/` folders + `sitemap.xml`) — GitHub Pages deploys automatically.
 
 ## Local preview
 
 ```sh
+python3 _build_pages.py          # regenerate the per-language pages first
 python3 -m http.server 8000
-# open http://localhost:8000
+# English: http://localhost:8000/   ·   日本語: http://localhost:8000/jp/
 ```

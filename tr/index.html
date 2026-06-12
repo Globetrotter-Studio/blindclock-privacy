@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr" data-lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlindClock — iPhone ve iPad için poker turnuvası blind sayacı</title>
+  <meta name="description" content="BlindClock, iPhone ve iPad için bir poker turnuvası blind sayacıdır. Blind yapısı oluşturucu, time bank, ödül hesaplayıcı, Live Activity, iPad masa görünümü ve iCloud eşitleme. Hesap yok, reklam yok, abonelik yok.">
+  <link rel="icon" type="image/png" href="../assets/icon.png">
+  <link rel="apple-touch-icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../assets/style.css?v=1.9">
+  <script src="../assets/lang.js?v=1.10"></script>
+<!--BC_I18N_HEAD_START-->
+  <link rel="canonical" href="https://blindclock.app/tr/">
+  <link rel="alternate" hreflang="en" href="https://blindclock.app/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://blindclock.app/zh/">
+  <link rel="alternate" hreflang="ja" href="https://blindclock.app/jp/">
+  <link rel="alternate" hreflang="ko" href="https://blindclock.app/ko/">
+  <link rel="alternate" hreflang="de" href="https://blindclock.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://blindclock.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://blindclock.app/it/">
+  <link rel="alternate" hreflang="pl" href="https://blindclock.app/pl/">
+  <link rel="alternate" hreflang="pt-BR" href="https://blindclock.app/pt/">
+  <link rel="alternate" hreflang="es-MX" href="https://blindclock.app/es/">
+  <link rel="alternate" hreflang="tr" href="https://blindclock.app/tr/">
+  <link rel="alternate" hreflang="vi" href="https://blindclock.app/vi/">
+  <link rel="alternate" hreflang="x-default" href="https://blindclock.app/">
+  <!--BC_I18N_HEAD_END-->
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="../assets/icon.png" alt="BlindClock icon">
+      BlindClock
+    </a>
+    <div class="nav-links">
+      <a class="nav-extra" href="#features"><span data-i18n="i1">Özellikler</span></a>
+      <a class="nav-extra" href="#whats-new"><span data-i18n="i2">Yenilikler</span></a>
+      <a href="support.html"><span data-i18n="i3">Destek</span></a>
+      <a href="privacy.html"><span data-i18n="i4">Gizlilik</span></a>
+      <select id="lang-select" class="lang-select" aria-label="Language"></select>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="app-icon" src="../assets/icon-large.png" alt="BlindClock app icon">
+  <h1>BlindClock</h1>
+  <p class="tagline">
+    <span data-i18n="i5">Poker gecenizi yöneten turnuva saati.</span>
+  </p>
+  <p class="sub">
+    <span data-i18n="i6">Blind seviyeleri, molalar, time bank, ödül dağılımı — saniyeler içinde ayarlayın, iPad'i masaya dayayın ve oynamaya başlayın. Hesap yok, reklam yok, abonelik yok.</span>
+  </p>
+  <div class="badge-row">
+    <!-- TODO: replace href with the real App Store URL once the app page is live -->
+    <a class="store-badge" href="https://apps.apple.com/app/blindclock">
+      <span class="apple"></span>
+      <span>
+        <span data-i18n="i7">App Store'dan İndirin</span>
+      </span>
+    </a>
+    <span class="version-pill">
+      <span data-i18n="i8">Sürüm 1.9 · iOS 18.6+ · iPhone &amp; iPad</span>
+    </span>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="features">
+    <h2 class="section-title">
+      <span data-i18n="i9">Bir ev sahibinin ihtiyacı olan her şey</span>
+    </h2>
+    <p class="section-sub">
+      <span data-i18n="i10">Ev oyunları ve kulüp turnuvaları için tasarlandı — ekran kapalıyken bile hassas, masanın öbür ucundan bile okunaklı.</span>
+    </p>
+    <div class="grid">
+      <div class="card">
+        <span class="suit">♠</span>
+        <h3><span data-i18n="i11">Hassas turnuva sayacı</span></h3>
+        <p>
+          <span data-i18n="i12">Seviyeleri duraklatın, sürdürün veya atlayın. Saat arka planda hassasiyetini korur ve uygulama zorla kapatılsa bile çalışmaya devam eder — kaldığınız yerden tam olarak devam edin.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♥</span>
+        <h3><span data-i18n="i13">Blind yapısı üretici</span></h3>
+        <p>
+          <span data-i18n="i14">Oyuncu sayınızı, çiplerinizi ve hedef süreyi girin — tek dokunuşla, molaları da içeren, temiz ve kumarhane tarzı bir yapı elde edin.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♦</span>
+        <h3><span data-i18n="i15">Ödül hesaplayıcı</span></h3>
+        <p>
+          <span data-i18n="i16">Buy-in, rebuy ve ödül dağılımları anında hesaplanır — gece sonunda hesabı bir tabloya gerek kalmadan kapatın.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♣</span>
+        <h3><span data-i18n="i17">Time bank</span></h3>
+        <p>
+          <span data-i18n="i18">Yapılandırılabilir time bank'lerle oyunculara ek karar süresi verin; uyarılar ve seslerle eksiksiz.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♠</span>
+        <h3><span data-i18n="i19">Live Activity &amp; Dynamic Island</span></h3>
+        <p>
+          <span data-i18n="i20">Mevcut seviye Kilit Ekranınızda ve Dynamic Island'da görünür. Şarjdaki bir iPhone'da StandBy bunu tam ekran bir turnuva saatine dönüştürür.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♥</span>
+        <h3><span data-i18n="i21">iPad masa ekranı</span></h3>
+        <p>
+          <span data-i18n="i22">İki yanında blind bilgileriyle dev bir geri sayım için iPad'i yatay konuma çevirin — tüm masa bir bakışta okur ve ekran açık kalır.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♦</span>
+        <h3><span data-i18n="i23">Şablon paylaşımı</span></h3>
+        <p>
+          <span data-i18n="i24">Herhangi bir turnuvayı bir .blindclock dosyası olarak dışa aktarın ve AirDrop ile bir arkadaşınıza gönderin — tam olarak aynı yapıyı tek dokunuşla içe aktarır.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♣</span>
+        <h3><span data-i18n="i25">iCloud senkronizasyonu</span></h3>
+        <p>
+          <span data-i18n="i26">Turnuva şablonlarınız iPhone ve iPad arasında otomatik olarak sizinle gelir — herkes için ücretsiz.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="whats-new">
+    <div class="whatsnew">
+      <h2>
+        <span data-i18n="i27">1.9'da neler yeni</span>
+      </h2>
+      <ul>
+        <li>
+          <b><span data-i18n="i28a">Artık 12 dilde</span></b> —
+          <span data-i18n="i28b">uygulama, bu site ve App Store sayfası tamamen yerelleştirildi:</span>
+          English · 繁體中文 · 日本語 · 한국어 · Deutsch · Français · Italiano · Polski · Português · Español · Türkçe · Tiếng Việt.
+        </li>
+        <li>
+          <b><span data-i18n="i29a">Turnuvaları kendi dilinizde yönetin</span></b> —
+          <span data-i18n="i29b">blind yapısı üreticisinden ödül dağılımına kadar her ekran artık baştan sona sizin dilinizi konuşuyor.</span>
+        </li>
+        <li>
+          <b><span data-i18n="i30a">İnce ayarlar ve düzeltmeler</span></b> —
+          <span data-i18n="i30b">uygulama genelinde iyileştirmeler.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="pro">
+    <div class="pro">
+      <div class="crown">👑</div>
+      <h2>BlindClock Pro</h2>
+      <p class="lead">
+        <span data-i18n="i41">Ücretsiz sürüm tamamen oynanabilir — sayaç, Live Activity, üretici, ödül dağılımı, senkronizasyon ve 5'e kadar özel turnuva. Pro, tek bir satın almayla sınırı sonsuza dek, tüm cihazlarınızda kaldırır.</span>
+      </p>
+      <ul class="pro-points">
+        <li><span data-i18n="i42">Sınırsız özel turnuva</span></li>
+        <li><span data-i18n="i43">Tek seferlik satın alma</span></li>
+        <li><span data-i18n="i44">Reklam yok, abonelik yok</span></li>
+        <li><span data-i18n="i45">Tüm cihazlarınızda</span></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-links">
+    <a href="support.html"><span data-i18n="i46">Destek</span></a>
+    <a href="privacy.html"><span data-i18n="i47">Gizlilik Politikası</span></a>
+    <a href="mailto:panshikai0117@gmail.com"><span data-i18n="i48">İletişim</span></a>
+  </div>
+  <div>© 2026 globetrotter-studio ·
+    <span data-i18n="i49">BlindClock bağımsız bir uygulamadır.</span>
+  </div>
+</footer>
+
+</body>
+</html>

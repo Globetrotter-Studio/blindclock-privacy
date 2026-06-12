@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlindClock — iPhone・iPad 用ポーカートーナメント・ブラインドタイマー</title>
+  <meta name="description" content="BlindClock は iPhone と iPad のためのポーカートーナメント用ブラインドタイマー。ブラインド構成ジェネレーター、タイムバンク、賞金計算、Live Activity、iPad テーブル表示、iCloud 同期に対応。アカウント不要、広告なし、サブスクなし。">
+  <link rel="icon" type="image/png" href="../assets/icon.png">
+  <link rel="apple-touch-icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../assets/style.css?v=1.9">
+  <script src="../assets/lang.js?v=1.10"></script>
+<!--BC_I18N_HEAD_START-->
+  <link rel="canonical" href="https://blindclock.app/jp/">
+  <link rel="alternate" hreflang="en" href="https://blindclock.app/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://blindclock.app/zh/">
+  <link rel="alternate" hreflang="ja" href="https://blindclock.app/jp/">
+  <link rel="alternate" hreflang="ko" href="https://blindclock.app/ko/">
+  <link rel="alternate" hreflang="de" href="https://blindclock.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://blindclock.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://blindclock.app/it/">
+  <link rel="alternate" hreflang="pl" href="https://blindclock.app/pl/">
+  <link rel="alternate" hreflang="pt-BR" href="https://blindclock.app/pt/">
+  <link rel="alternate" hreflang="es-MX" href="https://blindclock.app/es/">
+  <link rel="alternate" hreflang="tr" href="https://blindclock.app/tr/">
+  <link rel="alternate" hreflang="vi" href="https://blindclock.app/vi/">
+  <link rel="alternate" hreflang="x-default" href="https://blindclock.app/">
+  <!--BC_I18N_HEAD_END-->
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="../assets/icon.png" alt="BlindClock icon">
+      BlindClock
+    </a>
+    <div class="nav-links">
+      <a class="nav-extra" href="#features"><span data-i18n="i1">機能</span></a>
+      <a class="nav-extra" href="#whats-new"><span data-i18n="i2">新着情報</span></a>
+      <a href="support.html"><span data-i18n="i3">サポート</span></a>
+      <a href="privacy.html"><span data-i18n="i4">プライバシー</span></a>
+      <select id="lang-select" class="lang-select" aria-label="Language"></select>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="app-icon" src="../assets/icon-large.png" alt="BlindClock app icon">
+  <h1>BlindClock</h1>
+  <p class="tagline">
+    <span data-i18n="i5">あなたのポーカーナイトを仕切るトーナメントクロック。</span>
+  </p>
+  <p class="sub">
+    <span data-i18n="i6">ブラインドレベル、休憩、タイムバンク、ペイアウト——数秒でセットアップして、iPad を立てかければ、あとはプレイするだけ。アカウント不要、広告なし、サブスクなし。</span>
+  </p>
+  <div class="badge-row">
+    <!-- TODO: replace href with the real App Store URL once the app page is live -->
+    <a class="store-badge" href="https://apps.apple.com/app/blindclock">
+      <span class="apple"></span>
+      <span>
+        <span data-i18n="i7">App Store でダウンロード</span>
+      </span>
+    </a>
+    <span class="version-pill">
+      <span data-i18n="i8">バージョン 1.9 · iOS 18.6+ · iPhone &amp; iPad</span>
+    </span>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="features">
+    <h2 class="section-title">
+      <span data-i18n="i9">ホストに必要なもの、すべて。</span>
+    </h2>
+    <p class="section-sub">
+      <span data-i18n="i10">ホームゲームからクラブのトーナメントまで——画面を消しても正確、テーブルの向こうからでもしっかり読める。</span>
+    </p>
+    <div class="grid">
+      <div class="card">
+        <span class="suit">♠</span>
+        <h3><span data-i18n="i11">正確なトーナメントタイマー</span></h3>
+        <p>
+          <span data-i18n="i12">レベルの一時停止、再開、スキップが自由自在。バックグラウンドでも正確で、強制終了しても大丈夫——中断したところからそのまま再開できます。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♥</span>
+        <h3><span data-i18n="i13">ブラインドストラクチャージェネレーター</span></h3>
+        <p>
+          <span data-i18n="i14">参加人数、チップ、目標時間を入力するだけ——休憩を含むカジノ仕様のきれいなストラクチャーがワンタップで完成。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♦</span>
+        <h3><span data-i18n="i15">ペイアウト計算機</span></h3>
+        <p>
+          <span data-i18n="i16">バイイン、リバイ、賞金の分配をその場で計算——スプレッドシートなしで夜の精算が完了します。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♣</span>
+        <h3><span data-i18n="i17">タイムバンク</span></h3>
+        <p>
+          <span data-i18n="i18">設定可能なタイムバンクで、プレイヤーに考える時間を追加。警告表示とサウンドも完備。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♠</span>
+        <h3><span data-i18n="i19">Live Activity &amp; Dynamic Island</span></h3>
+        <p>
+          <span data-i18n="i20">現在のレベルはロック画面と Dynamic Island に常時表示。充電中の iPhone では、StandBy がフルスクリーンのトーナメントクロックに変わります。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♥</span>
+        <h3><span data-i18n="i21">iPad テーブルディスプレイ</span></h3>
+        <p>
+          <span data-i18n="i22">iPad を横向きにすれば、左右にブラインド情報を配した巨大なカウントダウンに——テーブル全員が一目で読め、画面も消えません。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit red">♦</span>
+        <h3><span data-i18n="i23">テンプレート共有</span></h3>
+        <p>
+          <span data-i18n="i24">どんなトーナメントも .blindclock ファイルとして書き出して、AirDrop で仲間に送るだけ——相手はワンタップで同じストラクチャーをそのまま読み込めます。</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="suit">♣</span>
+        <h3><span data-i18n="i25">iCloud 同期</span></h3>
+        <p>
+          <span data-i18n="i26">トーナメントのテンプレートが iPhone と iPad の間で自動的に同期——すべての人に無料。</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="whats-new">
+    <div class="whatsnew">
+      <h2>
+        <span data-i18n="i27">1.9 の新着情報</span>
+      </h2>
+      <ul>
+        <li>
+          <b><span data-i18n="i28a">12 言語に対応</span></b> —
+          <span data-i18n="i28b">アプリ、本サイト、App Store ページのすべてが完全にローカライズされています：</span>
+          English · 繁體中文 · 日本語 · 한국어 · Deutsch · Français · Italiano · Polski · Português · Español · Türkçe · Tiếng Việt.
+        </li>
+        <li>
+          <b><span data-i18n="i29a">あなたの言語でトーナメントを進行</span></b> —
+          <span data-i18n="i29b">ブラインドストラクチャージェネレーターからペイアウトまで、すべての画面が、最初から最後まであなたの言語で表示されます。</span>
+        </li>
+        <li>
+          <b><span data-i18n="i30a">細部の調整と修正</span></b> —
+          <span data-i18n="i30b">アプリ全体の改善。</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="pro">
+    <div class="pro">
+      <div class="crown">👑</div>
+      <h2>BlindClock Pro</h2>
+      <p class="lead">
+        <span data-i18n="i41">無料版だけでフル機能——タイマー、Live Activity、ジェネレーター、ペイアウト、同期、そしてカスタムトーナメント最大 5 件まで使えます。Pro なら一度の購入でこの上限が永久に解除され、すべてのデバイスで利用できます。</span>
+      </p>
+      <ul class="pro-points">
+        <li><span data-i18n="i42">カスタムトーナメント無制限</span></li>
+        <li><span data-i18n="i43">一度きりの買い切り</span></li>
+        <li><span data-i18n="i44">広告なし、サブスクなし</span></li>
+        <li><span data-i18n="i45">すべてのデバイスで利用可</span></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-links">
+    <a href="support.html"><span data-i18n="i46">サポート</span></a>
+    <a href="privacy.html"><span data-i18n="i47">プライバシーポリシー</span></a>
+    <a href="mailto:panshikai0117@gmail.com"><span data-i18n="i48">お問い合わせ</span></a>
+  </div>
+  <div>© 2026 globetrotter-studio ·
+    <span data-i18n="i49">BlindClock は独立系アプリです。</span>
+  </div>
+</footer>
+
+</body>
+</html>
