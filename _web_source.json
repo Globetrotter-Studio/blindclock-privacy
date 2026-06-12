@@ -1,0 +1,466 @@
+{
+  "i1": {
+    "en": "Features",
+    "zh-Hant": "功能"
+  },
+  "i2": {
+    "en": "What’s New",
+    "zh-Hant": "最新版本"
+  },
+  "i3": {
+    "en": "Support",
+    "zh-Hant": "支援"
+  },
+  "i4": {
+    "en": "Privacy",
+    "zh-Hant": "隱私權"
+  },
+  "i5": {
+    "en": "The tournament clock that runs your poker night.",
+    "zh-Hant": "替你管好整晚牌局的錦標賽時鐘。"
+  },
+  "i6": {
+    "en": "Blind levels, breaks, time bank, payouts — set it up in seconds, prop up the iPad, and just play. No account, no ads, no subscription.",
+    "zh-Hant": "盲注級別、休息時段、Time Bank、獎池分配——幾秒鐘設定完成，把 iPad 立在桌上就能開打。不用帳號、沒有廣告、不搞訂閱。"
+  },
+  "i7": {
+    "en": "Download on the App Store",
+    "zh-Hant": "前往 App Store 下載"
+  },
+  "i8": {
+    "en": "Version 1.9 · iOS 18.6+ · iPhone &amp; iPad",
+    "zh-Hant": "版本 1.9 · iOS 18.6+ · iPhone 與 iPad"
+  },
+  "i9": {
+    "en": "Everything a host needs",
+    "zh-Hant": "主持人需要的，都在這裡"
+  },
+  "i10": {
+    "en": "Built for home games and club tournaments — accurate when the screen is off, readable from across the table.",
+    "zh-Hant": "為家庭局與俱樂部錦標賽而生——螢幕關了照樣精準，整張牌桌都看得清楚。"
+  },
+  "i11": {
+    "en": "Precise tournament timer",
+    "zh-Hant": "精準錦標賽計時"
+  },
+  "i12": {
+    "en": "Pause, resume, or skip levels. The clock stays accurate in the background and survives a force-quit — pick up right where you left off.",
+    "zh-Hant": "暫停、續跑、跳級隨你操作。退到背景照樣準確，就算強制關閉 App 也能從中斷處接著跑。"
+  },
+  "i13": {
+    "en": "Blind structure generator",
+    "zh-Hant": "盲注結構產生器"
+  },
+  "i14": {
+    "en": "Tell it your player count, chips, and target length — get a clean, casino-style structure with breaks in one tap.",
+    "zh-Hant": "輸入人數、籌碼與目標時長，一鍵產生含休息時段、數字漂亮的標準結構。"
+  },
+  "i15": {
+    "en": "Payout calculator",
+    "zh-Hant": "獎池計算器"
+  },
+  "i16": {
+    "en": "Buy-ins, rebuys, and prize splits computed on the spot — settle up at the end of the night without a spreadsheet.",
+    "zh-Hant": "買入、重買、名次拆分當場算好，散場結帳不用再開試算表。"
+  },
+  "i17": {
+    "en": "Time bank",
+    "zh-Hant": "Time Bank"
+  },
+  "i18": {
+    "en": "Give players extra decision time with configurable time banks, complete with warnings and sounds.",
+    "zh-Hant": "可設定的 Time Bank 給玩家加時思考，倒數提示與音效一應俱全。"
+  },
+  "i19": {
+    "en": "Live Activity &amp; Dynamic Island",
+    "zh-Hant": "Live Activity 與動態島"
+  },
+  "i20": {
+    "en": "The current level lives on your Lock Screen and Dynamic Island. On a charging iPhone, StandBy turns it into a full-screen tournament clock.",
+    "zh-Hant": "目前級別常駐鎖定畫面與動態島；iPhone 橫放充電時，StandBy 直接變成全螢幕比賽時鐘。"
+  },
+  "i21": {
+    "en": "iPad table display",
+    "zh-Hant": "iPad 牌桌展示模式"
+  },
+  "i22": {
+    "en": "Rotate an iPad to landscape for a giant countdown with blinds on either side — the whole table reads it at a glance, and the screen stays awake.",
+    "zh-Hant": "iPad 轉成橫向就是巨大倒數搭配左右盲注資訊，全桌一眼看清，螢幕全程常亮。"
+  },
+  "i23": {
+    "en": "Template sharing",
+    "zh-Hant": "範本分享"
+  },
+  "i24": {
+    "en": "Export any tournament as a .blindclock file and AirDrop it to a friend — they import your exact structure in one tap.",
+    "zh-Hant": "把賽事匯出成 .blindclock 檔，AirDrop 給牌友，一鍵就能匯入一模一樣的結構。"
+  },
+  "i25": {
+    "en": "iCloud sync",
+    "zh-Hant": "iCloud 同步"
+  },
+  "i26": {
+    "en": "Your tournament templates follow you across iPhone and iPad automatically — free for everyone.",
+    "zh-Hant": "賽事範本在 iPhone 與 iPad 之間自動同步——所有人免費使用。"
+  },
+  "i27": {
+    "en": "What’s new in 1.9",
+    "zh-Hant": "1.9 版更新內容"
+  },
+  "i41": {
+    "en": "The free version is fully playable — timer, Live Activity, generator, payouts, sync, and up to 5 custom tournaments. Pro removes the limit with one purchase, forever, on all your devices.",
+    "zh-Hant": "免費版功能完整可用——計時器、Live Activity、結構產生器、獎池計算、同步，以及最多 5 個自訂賽事。Pro 一次買斷即永久解除上限，所有裝置通用。"
+  },
+  "i42": {
+    "en": "Unlimited custom tournaments",
+    "zh-Hant": "無限自訂賽事"
+  },
+  "i43": {
+    "en": "One-time purchase",
+    "zh-Hant": "一次買斷"
+  },
+  "i44": {
+    "en": "No ads, no subscription",
+    "zh-Hant": "無廣告、無訂閱"
+  },
+  "i45": {
+    "en": "All your devices",
+    "zh-Hant": "所有裝置通用"
+  },
+  "i46": {
+    "en": "Support",
+    "zh-Hant": "支援"
+  },
+  "i47": {
+    "en": "Privacy Policy",
+    "zh-Hant": "隱私權政策"
+  },
+  "i48": {
+    "en": "Contact",
+    "zh-Hant": "聯絡我們"
+  },
+  "i49": {
+    "en": "BlindClock is an independent app.",
+    "zh-Hant": "BlindClock 是一款獨立開發的 App。"
+  },
+  "s1": {
+    "en": "Home",
+    "zh-Hant": "首頁"
+  },
+  "s2": {
+    "en": "Privacy",
+    "zh-Hant": "隱私權"
+  },
+  "s3": {
+    "en": "Support",
+    "zh-Hant": "支援"
+  },
+  "s4": {
+    "en": "BlindClock 1.9 · We usually reply within a few days.",
+    "zh-Hant": "BlindClock 1.9 · 我們通常會在幾天內回覆。"
+  },
+  "s5": {
+    "en": "Need a hand?",
+    "zh-Hant": "需要幫忙嗎？"
+  },
+  "s6": {
+    "en": "Questions, bug reports, and feature requests are all welcome. Please include your app version and device model so we can help faster.",
+    "zh-Hant": "使用問題、錯誤回報、功能建議都歡迎來信。請附上 App 版本與裝置型號，我們能更快幫上忙。"
+  },
+  "s7": {
+    "en": "Frequently asked questions",
+    "zh-Hant": "常見問題"
+  },
+  "s8": {
+    "en": "I can’t hear the level-change sounds.",
+    "zh-Hant": "聽不到級別切換的提示音。"
+  },
+  "s9": {
+    "en": "BlindClock’s chimes play even when the iPhone silent switch is on — but they use the media volume. Turn the volume up with the side buttons while the app is open, and check that sounds are enabled in the tournament’s settings. While the app is in the background, alerts are delivered as notifications, so allow notifications when the app asks.",
+    "zh-Hant": "BlindClock 的提示音即使在 iPhone 靜音模式下也會播放，但音量取決於媒體音量。請在 App 開啟時用側邊按鈕調高音量，並確認賽事設定中已開啟音效。App 退到背景時，提示改由通知送達，因此請允許 App 的通知權限。"
+  },
+  "s10": {
+    "en": "What does BlindClock Pro include, and is it a subscription?",
+    "zh-Hant": "BlindClock Pro 包含什麼？是訂閱制嗎？"
+  },
+  "s11": {
+    "en": "Pro is a one-time purchase — not a subscription. The free version includes everything you need to run a game, plus up to 5 custom tournaments. Pro removes that limit so you can save unlimited tournaments, on all devices signed in with your Apple Account.",
+    "zh-Hant": "Pro 是一次性買斷，不是訂閱。免費版已包含主持牌局所需的全部功能，並可建立最多 5 個自訂賽事；Pro 解除這個上限，讓你儲存無限個賽事，且在使用同一 Apple 帳號的所有裝置上通用。"
+  },
+  "s12": {
+    "en": "I bought Pro but it shows as locked. How do I restore my purchase?",
+    "zh-Hant": "已購買 Pro 但顯示未解鎖，如何恢復購買？"
+  },
+  "s13": {
+    "en": "Open the upgrade screen (tap the Pro banner on the home screen) and tap “Restore Purchases”. Make sure the device is signed in with the same Apple Account you used to buy Pro.",
+    "zh-Hant": "打開升級頁面（點首頁的 Pro 橫幅），然後點「恢復購買」。請確認裝置登入的 Apple 帳號與當初購買 Pro 的帳號相同。"
+  },
+  "s14": {
+    "en": "How does iCloud sync work?",
+    "zh-Hant": "iCloud 同步如何運作？"
+  },
+  "s15": {
+    "en": "Your custom tournaments sync automatically through your private iCloud account — no setup needed. Both devices must be signed in to the same Apple Account with iCloud Drive enabled. If you’re not signed in to iCloud, the app simply keeps everything on the device. The running clock itself doesn’t sync between devices — only your saved tournaments do.",
+    "zh-Hant": "自訂賽事會透過你的私人 iCloud 帳號自動同步，無需任何設定。兩台裝置必須登入同一個 Apple 帳號並啟用 iCloud 雲碟。如果未登入 iCloud，App 會將所有資料保留在裝置上。注意：同步的是已儲存的賽事範本，執行中的時鐘不會跨裝置同步。"
+  },
+  "s16": {
+    "en": "How do I share a tournament with a friend?",
+    "zh-Hant": "如何把賽事分享給朋友？"
+  },
+  "s17": {
+    "en": "Swipe left on any tournament in your list and tap the share icon to export it as a .blindclock file — send it via AirDrop, Messages, or any app. When your friend opens the file, BlindClock shows a preview and imports it with one tap.",
+    "zh-Hant": "在賽事列表中向左滑動，點分享圖示即可匯出 .blindclock 檔，透過 AirDrop、訊息或任何 App 傳送。朋友打開檔案後，BlindClock 會顯示預覽，一鍵即可匯入。"
+  },
+  "s18": {
+    "en": "The Live Activity doesn’t appear on my Lock Screen.",
+    "zh-Hant": "鎖定畫面上沒有出現 Live Activity。"
+  },
+  "s19": {
+    "en": "Check Settings → BlindClock and make sure Live Activities are allowed. You can also toggle the lock-screen banner from the in-app settings while a tournament is running. On iPhone 14 Pro and later, the current level also appears in the Dynamic Island.",
+    "zh-Hant": "請到「設定 → BlindClock」確認已允許「即時動態」。比賽進行中也可以在 App 內設定切換鎖定畫面橫幅。iPhone 14 Pro 及之後的機型，目前級別也會顯示在動態島上。"
+  },
+  "s20": {
+    "en": "How do I keep the screen on during a game?",
+    "zh-Hant": "如何讓螢幕在牌局中保持常亮？"
+  },
+  "s21": {
+    "en": "Turn on “Keep Screen Awake” in the running tournament’s settings. On iPad in landscape, the table display keeps the screen awake automatically. Plug in the device for long sessions.",
+    "zh-Hant": "在進行中賽事的設定裡開啟「保持螢幕喚醒」。iPad 橫向的牌桌展示模式會自動常亮。長時間牌局建議接上電源。"
+  },
+  "s22": {
+    "en": "I force-quit the app mid-tournament. Is my game gone?",
+    "zh-Hant": "比賽中不小心強制關閉 App，進度會不見嗎？"
+  },
+  "s23": {
+    "en": "No — BlindClock saves a checkpoint while the clock runs. Reopen the app and it offers to resume the tournament exactly where it left off, with the elapsed time corrected.",
+    "zh-Hant": "不會——時鐘運行期間 BlindClock 會持續保存進度。重新打開 App 即可從中斷的地方繼續比賽，經過的時間也會自動校正。"
+  },
+  "s24": {
+    "en": "Which devices are supported?",
+    "zh-Hant": "支援哪些裝置？"
+  },
+  "s25": {
+    "en": "BlindClock runs on iPhone and iPad with iOS / iPadOS 18.6 or later, in 12 languages: English, Traditional Chinese, Japanese, Korean, German, French, Italian, Polish, Portuguese, Spanish, Turkish, and Vietnamese.",
+    "zh-Hant": "BlindClock 支援 iOS / iPadOS 18.6 以上的 iPhone 與 iPad，提供 12 種語言介面：英文、繁體中文、日文、韓文、德文、法文、義大利文、波蘭文、葡萄牙文、西班牙文、土耳其文與越南文。"
+  },
+  "s26": {
+    "en": "Home",
+    "zh-Hant": "首頁"
+  },
+  "s27": {
+    "en": "Privacy Policy",
+    "zh-Hant": "隱私權政策"
+  },
+  "s28": {
+    "en": "Contact",
+    "zh-Hant": "聯絡我們"
+  },
+  "s29": {
+    "en": "BlindClock is an independent app.",
+    "zh-Hant": "BlindClock 是一款獨立開發的 App。"
+  },
+  "p1": {
+    "en": "Home",
+    "zh-Hant": "首頁"
+  },
+  "p2": {
+    "en": "Support",
+    "zh-Hant": "支援"
+  },
+  "p3": {
+    "en": "Home",
+    "zh-Hant": "首頁"
+  },
+  "p4": {
+    "en": "Support",
+    "zh-Hant": "支援"
+  },
+  "p5": {
+    "en": "Contact",
+    "zh-Hant": "聯絡我們"
+  },
+  "p6": {
+    "en": "BlindClock is an independent app. This Privacy Policy applies to the BlindClock iOS application.",
+    "zh-Hant": "BlindClock 是一款獨立開發的 App。本隱私權政策適用於 BlindClock iOS 應用程式。"
+  },
+  "i28a": {
+    "en": "Now in 12 languages",
+    "zh-Hant": "支援 12 種語言"
+  },
+  "i28b": {
+    "en": "the app, this site, and the App Store page are fully localized:",
+    "zh-Hant": "App、本網站與 App Store 產品頁皆已完整在地化："
+  },
+  "i29a": {
+    "en": "Run tournaments in your language",
+    "zh-Hant": "用你的語言主持牌局"
+  },
+  "i29b": {
+    "en": "every screen, from the blind structure generator to payouts, now speaks your language end to end.",
+    "zh-Hant": "從盲注結構產生器到獎池計算，每個畫面都用你的語言，從頭到尾。"
+  },
+  "i30a": {
+    "en": "Polish & fixes",
+    "zh-Hant": "細節打磨與修正"
+  },
+  "i30b": {
+    "en": "refinements across the app.",
+    "zh-Hant": "全 App 體驗優化。"
+  },
+  "pv1": {
+    "en": "BlindClock — Privacy Policy",
+    "zh-Hant": "BlindClock — 隱私權政策"
+  },
+  "pv2": {
+    "en": "Effective date: June 11, 2026",
+    "zh-Hant": "生效日期：2026 年 6 月 11 日"
+  },
+  "pv3": {
+    "en": "BlindClock (the “App”) is a poker tournament blind timer for iPhone and iPad, published by globetrotter-studio (“we”, “us”). We built BlindClock to be useful without being nosy. This policy explains exactly what limited data the App handles, and — just as importantly — what it does not.",
+    "zh-Hant": "BlindClock（下稱「本 App」）是一款適用於 iPhone 與 iPad 的撲克錦標賽盲注計時器，由 globetrotter-studio（下稱「我們」）發行。我們希望 BlindClock 好用，但絕不窺探。本政策完整說明本 App 處理哪些有限的資料，以及——同樣重要的——不處理哪些資料。"
+  },
+  "pv4": {
+    "en": "<b>The short version</b>",
+    "zh-Hant": "<b>重點摘要</b>"
+  },
+  "pv5": {
+    "en": "No account, no sign-in, no personal details required.",
+    "zh-Hant": "不需帳號、不需登入、不需提供任何個人資料。"
+  },
+  "pv6": {
+    "en": "Your tournament templates and settings stay <b>on your device</b> (and, if you use iCloud, in your private iCloud account).",
+    "zh-Hant": "你的賽事範本與設定保存在<b>你的裝置上</b>（若使用 iCloud，則同步至你的私人 iCloud 帳號）。"
+  },
+  "pv7": {
+    "en": "We use one privacy-friendly analytics provider (TelemetryDeck) to collect <b>anonymous</b> usage statistics.",
+    "zh-Hant": "我們僅使用一家注重隱私的分析服務（TelemetryDeck）收集<b>匿名</b>使用統計。"
+  },
+  "pv8": {
+    "en": "No advertising. No cross-app tracking. No selling or renting of data. No IDFA.",
+    "zh-Hant": "沒有廣告、沒有跨 App 追蹤、絕不出售或出租資料、不使用 IDFA。"
+  },
+  "pv9": {
+    "en": "1. Information stored on your device",
+    "zh-Hant": "1. 儲存在你裝置上的資訊"
+  },
+  "pv10": {
+    "en": "The tournaments you build — blind levels, breaks, time-bank settings, sound and screen preferences — are stored <b>locally on your device only</b>, using Apple’s on-device storage. This information is never transmitted to us or to anyone else, and it is removed when you delete the App.",
+    "zh-Hant": "你建立的賽事——盲注級別、休息時段、Time Bank 設定、音效與螢幕偏好——僅透過 Apple 的裝置端儲存機制<b>保存在你的裝置上</b>。這些資訊不會傳送給我們或任何其他人，且會在你刪除本 App 時一併移除。"
+  },
+  "pv11": {
+    "en": "If your device is signed in to iCloud, your tournament templates are also synced through <b>your private iCloud database</b> (Apple CloudKit) so they appear on your other devices. This data belongs to your Apple Account; we have no access to it, and it is governed by <a href=\"https://www.apple.com/legal/privacy/\">Apple’s Privacy Policy</a>. You can stop syncing by signing out of iCloud or disabling iCloud Drive for the App.",
+    "zh-Hant": "若你的裝置已登入 iCloud，賽事範本也會透過<b>你的私人 iCloud 資料庫</b>（Apple CloudKit）同步，讓它們出現在你的其他裝置上。這些資料屬於你的 Apple 帳號，我們無法存取，並受 <a href=\"https://www.apple.com/legal/privacy/\">Apple 隱私權政策</a>規範。你可以登出 iCloud 或停用本 App 的 iCloud 雲碟來停止同步。"
+  },
+  "pv12": {
+    "en": "2. Analytics data we collect",
+    "zh-Hant": "2. 我們收集的分析資料"
+  },
+  "pv13": {
+    "en": "To understand how BlindClock is used and to improve it, the App sends anonymous usage analytics through <a href=\"https://telemetrydeck.com/\">TelemetryDeck</a>, a privacy-focused analytics service. The data collected is limited to:",
+    "zh-Hant": "為了了解 BlindClock 的使用情形並加以改進，本 App 會透過注重隱私的分析服務 <a href=\"https://telemetrydeck.com/\">TelemetryDeck</a> 傳送匿名使用分析。收集的資料僅限於："
+  },
+  "pv14": {
+    "en": "<b>A non-identifying device identifier</b> — a one-way hashed value used to count unique installations and sessions. It cannot be reversed to identify you, and it is not your Apple ID, phone number, or advertising identifier.",
+    "zh-Hant": "<b>無法識別身分的裝置識別碼</b>——經單向雜湊處理的值，用於統計安裝數與工作階段數。它無法反推出你的身分，也不是你的 Apple ID、電話號碼或廣告識別碼。"
+  },
+  "pv15": {
+    "en": "<b>Product interaction / usage events</b> — for example: launching the App, starting or finishing a tournament, creating, editing or deleting a tournament template, reaching the free template limit, or viewing the upgrade screen.",
+    "zh-Hant": "<b>產品互動/使用事件</b>——例如：啟動 App、開始或結束一場比賽、建立、編輯或刪除賽事範本、達到免費範本上限、檢視升級頁面。"
+  },
+  "pv16": {
+    "en": "<b>Basic technical context</b> — such as App version, iOS version, device model, language/region setting, and screen size.",
+    "zh-Hant": "<b>基本技術環境</b>——例如 App 版本、iOS 版本、裝置型號、語言/地區設定與螢幕尺寸。"
+  },
+  "pv17": {
+    "en": "This data is used <b>solely for analytics</b> (understanding usage and improving the App). It is <b>not linked to your identity</b> and is <b>not used to track you</b>.",
+    "zh-Hant": "這些資料<b>僅用於分析</b>（了解使用情形並改進 App），<b>不會連結至你的身分</b>，也<b>不會用於追蹤你</b>。"
+  },
+  "pv18": {
+    "en": "3. What we do <i>not</i> collect",
+    "zh-Hant": "3. 我們「不」收集的資料"
+  },
+  "pv19": {
+    "en": "No name, email address, phone number, or postal address.",
+    "zh-Hant": "不收集姓名、電子郵件、電話號碼或郵寄地址。"
+  },
+  "pv20": {
+    "en": "No contacts, photos, calendars, or files.",
+    "zh-Hant": "不存取聯絡人、照片、行事曆或檔案。"
+  },
+  "pv21": {
+    "en": "No precise location or GPS data.",
+    "zh-Hant": "不收集精確位置或 GPS 資料。"
+  },
+  "pv22": {
+    "en": "No payment or financial information — purchases of BlindClock Pro are processed entirely by Apple; we never see your payment details.",
+    "zh-Hant": "不收集付款或財務資訊——BlindClock Pro 的購買完全由 Apple 處理，我們不會看到你的付款細節。"
+  },
+  "pv23": {
+    "en": "No advertising identifier (IDFA) and no advertising of any kind.",
+    "zh-Hant": "不使用廣告識別碼（IDFA），也沒有任何形式的廣告。"
+  },
+  "pv24": {
+    "en": "No tracking of you across other companies’ apps or websites.",
+    "zh-Hant": "不會跨其他公司的 App 或網站追蹤你。"
+  },
+  "pv25": {
+    "en": "We never sell, rent, or trade your data.",
+    "zh-Hant": "我們絕不出售、出租或交換你的資料。"
+  },
+  "pv26": {
+    "en": "4. Our analytics provider",
+    "zh-Hant": "4. 我們的分析服務商"
+  },
+  "pv27": {
+    "en": "Analytics are processed on our behalf by <b>TelemetryDeck GmbH</b> (Germany), acting as our data processor. TelemetryDeck is designed for privacy: it does not build advertising profiles, does not perform fingerprinting or cross-company tracking, and processes data on servers in the European Union. You can read their privacy practices at <a href=\"https://telemetrydeck.com/privacy/\">telemetrydeck.com/privacy</a>.",
+    "zh-Hant": "分析資料由 <b>TelemetryDeck GmbH</b>（德國）以資料處理者的身分代表我們處理。TelemetryDeck 以隱私為設計核心：不建立廣告輪廓、不進行裝置指紋或跨公司追蹤，且資料於歐盟境內的伺服器處理。其隱私做法請參閱 <a href=\"https://telemetrydeck.com/privacy/\">telemetrydeck.com/privacy</a>。"
+  },
+  "pv28": {
+    "en": "5. App Tracking Transparency",
+    "zh-Hant": "5. App 追蹤透明度（ATT）"
+  },
+  "pv29": {
+    "en": "Because BlindClock does not track you across apps or websites and does not use the advertising identifier, the App does not ask for App Tracking Transparency permission.",
+    "zh-Hant": "由於 BlindClock 不會跨 App 或網站追蹤你，也不使用廣告識別碼，因此本 App 不需要、也不會請求「App 追蹤透明度」權限。"
+  },
+  "pv30": {
+    "en": "6. Data retention",
+    "zh-Hant": "6. 資料保存"
+  },
+  "pv31": {
+    "en": "The anonymous analytics described above are retained by TelemetryDeck in aggregated form in accordance with their data-retention practices. Because the data is not linked to your identity, it cannot be tied back to you individually.",
+    "zh-Hant": "上述匿名分析資料由 TelemetryDeck 依其資料保存規範以彙整形式保存。由於資料未連結至你的身分，無法回溯對應到任何個人。"
+  },
+  "pv32": {
+    "en": "7. Children’s privacy",
+    "zh-Hant": "7. 兒童隱私"
+  },
+  "pv33": {
+    "en": "BlindClock is not directed to children under 13, and we do not knowingly collect data from children. If you believe a child has provided us with information, please contact us and we will address it.",
+    "zh-Hant": "BlindClock 並非以 13 歲以下兒童為對象，我們也不會明知而收集兒童的資料。若你認為有兒童向我們提供了資訊，請與我們聯絡，我們將立即處理。"
+  },
+  "pv34": {
+    "en": "8. Your choices and rights",
+    "zh-Hant": "8. 你的選擇與權利"
+  },
+  "pv35": {
+    "en": "You can stop all analytics collection at any time by deleting the App from your device. Depending on where you live, you may have rights under laws such as the GDPR or CCPA (for example, to access or delete personal data). Because our analytics are anonymous and not linked to your identity, we generally cannot single out an individual’s data — but if you have any questions or requests, please reach out using the contact details below.",
+    "zh-Hant": "你隨時可以刪除本 App 來停止所有分析資料的收集。依你所在地區，你可能享有 GDPR 或 CCPA 等法律賦予的權利（例如存取或刪除個人資料）。由於我們的分析資料為匿名且未連結身分，通常無法單獨識別特定個人的資料——但如有任何疑問或請求，歡迎透過下方聯絡方式與我們聯繫。"
+  },
+  "pv36": {
+    "en": "9. Changes to this policy",
+    "zh-Hant": "9. 政策變更"
+  },
+  "pv37": {
+    "en": "We may update this policy from time to time. When we do, we will revise the “Effective date” at the top of this page. Significant changes will be reflected here before they take effect.",
+    "zh-Hant": "我們可能不時更新本政策。更新時，我們會修改本頁頂部的「生效日期」。重大變更會在生效前於本頁公布。"
+  },
+  "pv38": {
+    "en": "10. Contact",
+    "zh-Hant": "10. 聯絡方式"
+  },
+  "pv39": {
+    "en": "If you have any questions about this Privacy Policy, you can contact us at:<br>\n      <a href=\"mailto:panshikai0117@gmail.com\"><b>panshikai0117@gmail.com</b></a>",
+    "zh-Hant": "若你對本隱私權政策有任何疑問，請聯絡：<br>\n      <a href=\"mailto:panshikai0117@gmail.com\"><b>panshikai0117@gmail.com</b></a>"
+  }
+}
